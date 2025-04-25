@@ -1,7 +1,7 @@
 {
-	"name": "appinsights2",
+	"name": "@danloc9991/appinsights2",
 	"private": false,
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"type": "module",
 	"main": "./dist/my-lib.umd.cjs",
 	"module": "./dist/my-lib.js",
@@ -11,6 +11,9 @@
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/Danloc9991/AppinisghtsPackage.git"
+	},
+	"publishConfig": {
+		"@danloc9991:registry": "https://npm.pkg.github.com"
 	},
 	"exports": {
 		".": {
