@@ -1,11 +1,17 @@
 {
 	"name": "appinsights2",
-	"private": true,
+	"private": false,
 	"version": "1.0.0",
 	"type": "module",
 	"main": "./dist/my-lib.umd.cjs",
 	"module": "./dist/my-lib.js",
 	"types": "./dist/index.d.ts",
+	"author": "",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Danloc9991/AppinisghtsPackage.git"
+	},
 	"exports": {
 		".": {
 			"import": "./dist/my-lib.js",
