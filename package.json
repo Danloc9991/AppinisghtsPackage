@@ -1,12 +1,12 @@
 {
 	"name": "@danloc9991/appinsights2",
 	"private": false,
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"type": "module",
 	"main": "./dist/my-lib.umd.cjs",
 	"module": "./dist/my-lib.js",
 	"types": "./dist/index.d.ts",
-	"author": "",
+	"author": "JE Dunn",
 	"license": "ISC",
 	"repository": {
 		"type": "git",
