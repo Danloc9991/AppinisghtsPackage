@@ -45,7 +45,8 @@ class AppInsightsHander {
 
 		appInsights.addTelemetryInitializer((env: ITelemetryItem) => {
 			env.tags = env.tags || {};
-			env.tags["ai.cloud.role"] = this.role; //custom role
+			env.tags["ai.cloud.role"] = this.role;
+
 			//custom props
 			env.data = env.data || {};
 			env.data["appId"] = this.appName;
@@ -55,18 +56,6 @@ class AppInsightsHander {
 			env.data["appVersion"] = this.appversion;
 		});
 		return appInsights;
-	}
-	trackEvent(eventName: string, properties?: { [key: string]: any }) {
-		this.appInsights.trackEvent({ name: eventName }, properties);
-	}
-	trackpageView(pageName: string, properties?: { [key: string]: any }) {
-		this.appInsights.trackPageView({ name: pageName, properties: properties });
-	}
-	trackException(exception: Error, properties?: { [key: string]: any }) {
-		this.appInsights.trackException({ exception: exception, properties: properties });
-	}
-	trackMetric(name: string, value: number, properties?: { [key: string]: any }) {
-		this.appInsights.trackMetric({ name: name, average: value, properties: properties });
 	}
 }
 export { reactPlugin, AppInsightsHander };

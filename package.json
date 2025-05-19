@@ -1,19 +1,20 @@
 {
-	"name": "@danloc9991/appinsights2",
+	"name": "@je-dunn/appinsights",
 	"private": false,
-	"version": "1.1.0",
+	"version": "1.0.0",
 	"type": "module",
 	"main": "./dist/my-lib.umd.cjs",
 	"module": "./dist/my-lib.js",
 	"types": "./dist/index.d.ts",
-	"author": "",
+	"author": "JE Dunn Construction",
 	"license": "ISC",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Danloc9991/AppinisghtsPackage.git"
+		"url": "git+https://github.com/JE-Dunn/jed-fe-packages.git"
 	},
 	"publishConfig": {
-		"@danloc9991:registry": "https://npm.pkg.github.com"
+		"access": "restricted",
+		"@je-dunn:registry": "https://npm.pkg.github.com"
 	},
 	"exports": {
 		".": {
