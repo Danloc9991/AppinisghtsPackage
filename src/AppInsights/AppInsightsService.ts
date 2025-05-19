@@ -46,6 +46,9 @@ class AppInsightsHander {
 		appInsights.addTelemetryInitializer((env: ITelemetryItem) => {
 			env.tags = env.tags || {};
 			env.tags["ai.cloud.role"] = this.role;
+			env.tags["ai.cloud.role"] = this.role;
+
+			//custom props
 			env.data = env.data || {};
 			env.data["appId"] = this.appName;
 			env.data["username"] = this.user;
